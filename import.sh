@@ -29,7 +29,7 @@ do
  	echo "Please re-enter raw folder name!"
 done
 
-echo "Your raw folder name is ${BLUE} $rawfolder ${NC}."
+echo "Your raw folder name is $rawfolder."
 }
 
 #Step 2: Assign dataset name
@@ -42,7 +42,7 @@ do
  	echo "Please re-enter desired dataset name!"
 done
 
-echo "Your project name will be ${BLUE} $datasetname ${NC}. Thank you!"
+echo "Your project name will be $datasetname. Thank you!"
 }
 
 EMP_question () {
@@ -80,7 +80,7 @@ demultiplexquestions () {
 		echo "Please re-enter metadata file name!"
 	done
 
-	echo "Your metadata file is ${BLUE} $metadatafile ${NC}. Thank you!"
+	echo "Your metadata file is $metadatafile. Thank you!"
 
 	while 
 		head -1 ${datasetname}/metadata/$metadatafile #shows first line of metadata
@@ -106,7 +106,7 @@ demultiplexquestions () {
 		echo "Please re-enter whether your barcodes are reverse complemented!"
 	done
 
-	echo "You entered ${BLUE} $revcompbarcode ${NC}." 
+	echo "You entered $revcompbarcode." 
 
 		if [ $revcompbarcode = "yes" ]; 
 			then
@@ -132,7 +132,7 @@ demultiplexquestions () {
 		golayerrortranslated=--p-no-golay-error-correction
 		
 	fi
-	echo "QIIME will call ${BLUE}$golayerrortranslated${NC}."
+	echo "QIIME will call $golayerrortranslated."
 }
 
 #Actions that take a long time  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   - 
