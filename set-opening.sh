@@ -25,7 +25,7 @@ echo "You entered $reload"
  		echo "Please re-enter desired dataset name! "
 	done
 
-echo "Your dataset directory that has been loaded is ${BLUE} $datasetname ${NC}."; echo "..." ; echo "..."
+echo "Your dataset directory that has been loaded is $datasetname."; echo "..." ; echo "..."
 
 	else
 		echo "Your inputs from importing step will be carried forward." 
