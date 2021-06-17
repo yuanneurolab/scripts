@@ -185,7 +185,6 @@ echo "You entered $reload"
 
 #	Get what metadata categories are available
 categories () {
-    categories () {
     forbreak=
     echo "List of categories in your metadata:"
     #head -1 ${datasetname}/metadata/$metadatafile #shows first line of metadata
