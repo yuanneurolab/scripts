@@ -50,7 +50,7 @@ end_reads () {
 		echo "Please re-answer question!"
 	done
 
-	echo "Your data is ${BLUE} $endread ${NC}. "
+	echo "Your data is $endread. "
 
 	echo
 }
